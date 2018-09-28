@@ -15,7 +15,7 @@ document.body.appendChild(renderer.domElement);//将由渲染器创建的<canvas
 
 var cube;//创建一个立方体全局变量，以便我们可以从代码中的任何位置访问我们的立方体
 var loader = new THREE.TextureLoader();//创建一个新的TextureLoader对象，然后调用load()
-loader.load( 'metal003.png', function (texture) {  //load()需要两个参数（尽管可能需要更多）：我们想要加载的纹理（我们的PNG），以及在加载                                                      纹理时运行的函数
+loader.load( 'metal.png', function (texture) {  //load()需要两个参数（尽管可能需要更多）：我们想要加载的纹理（我们的PNG），以及在加载                                                      纹理时运行的函数
   texture.wrapS = THREE.RepeatWrapping;//使用纹理对象texture的属性来指定我们想要在立方体的所有边上包裹图像的2 x 2重复
   texture.wrapT = THREE.RepeatWrapping;
   texture.repeat.set(2, 2);
